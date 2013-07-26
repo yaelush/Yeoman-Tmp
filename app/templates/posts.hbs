@@ -7,7 +7,7 @@
             </thead>
             {{#each controller}}
             <tr><td>
-              {{title}} by {{author}}
+              {{#linkTo 'post' this}}{{title}} by {{author}}{{/linkTo}}
             </td></tr>
             {{/each}}
           </table>
